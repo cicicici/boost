@@ -5,8 +5,8 @@
   Distributed under the Boost Software License, Version 1.0. (See accompanying
   file LICENSE_1_0.txt or copy at http://www.boost.org/LICENSE_1_0.txt)
 ==============================================================================*/
-#ifndef PHOENIX_SPECIAL_OPS_HPP
-#define PHOENIX_SPECIAL_OPS_HPP
+#ifndef BOOST_SPIRIT_CLASSIC_PHOENIX_SPECIAL_OPS_HPP
+#define BOOST_SPIRIT_CLASSIC_PHOENIX_SPECIAL_OPS_HPP
 
 #include <boost/config.hpp>
 #ifdef BOOST_NO_STRINGSTREAM
@@ -20,6 +20,7 @@
 ///////////////////////////////////////////////////////////////////////////////
 #include <boost/spirit/home/classic/phoenix/operators.hpp>
 #include <iosfwd>
+#include <complex>
 
 ///////////////////////////////////////////////////////////////////////////////
 #if defined(_STLPORT_VERSION) && defined(__STL_USE_OWN_NAMESPACE)
@@ -28,18 +29,6 @@
 #else
 #define PHOENIX_STD std
 #endif
-
-///////////////////////////////////////////////////////////////////////////////
-//#if !defined(PHOENIX_NO_STD_NAMESPACE)
-namespace PHOENIX_STD
-{
-//#endif
-
-    template<typename T> class complex;
-
-//#if !defined(PHOENIX_NO_STD_NAMESPACE)
-}
-//#endif
 
 ///////////////////////////////////////////////////////////////////////////////
 namespace phoenix
